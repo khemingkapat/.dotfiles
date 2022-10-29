@@ -1,0 +1,14 @@
+local o = vim.opt
+o.relativenumber = true
+o.splitbelow = true
+o.splitright=true
+o.syntax='ON'
+o.shiftwidth=4
+o.expandtab=true
+o.autoindent=true
+o.smartindent=true
+o.mouse='a'
+o.termguicolors=true
+o.ignorecase=true
+o.list = true
+o.cursorline=true
