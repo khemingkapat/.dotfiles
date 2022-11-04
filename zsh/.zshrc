@@ -19,5 +19,5 @@ source ${HOME}/.zsh_plugins.sh
 
 #aliases
 alias tree="tree -aIC '.git'"
-bindkey ' i' autosuggest-accept
+bindkey '^ ' autosuggest-accept
 
