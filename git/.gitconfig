@@ -3,3 +3,5 @@
 	email = 60930364+KhemIngkapat@users.noreply.github.com
 [init]
 	defaultBranch = main
+[safe]
+	directory = /mnt/c/Users/khemi/OneDrive - Plearnpattana School/Desktop/workspace/Python/django/django_khem_project_v1
