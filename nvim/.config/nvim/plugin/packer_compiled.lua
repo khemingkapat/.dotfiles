@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/home/khemi/.local/share/nvim/site/pack/packer/start/nvim-comment",
     url = "https://github.com/terrortylor/nvim-comment"
   },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/home/khemi/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/khemi/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",

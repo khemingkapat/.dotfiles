@@ -18,6 +18,7 @@ return require('packer').startup(function(use)
         }
     use 'nvim-treesitter/nvim-treesitter'
     use 'terrortylor/nvim-comment'
+    use 'neovim/nvim-lspconfig'
 
     -- colorscheme
     use {'dracula/vim',as='dracula'}
