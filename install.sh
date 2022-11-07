@@ -16,7 +16,6 @@ nix-env -iA \
         nixpkgs.python311 \
         nixpkgs.lua \
         nixpkgs.pdm \
-        nixpkgs.vimPlugins.packer-nvim
 
 # stow
 stow nvim
@@ -33,4 +32,5 @@ sudo chsh -s $(which zsh) $USER
 antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
 
 # install packer.nvim
-nvim --cmd 'packadd! packer.nvim'
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
