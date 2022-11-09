@@ -18,7 +18,7 @@ PS1=' %F{014}-> %1~%f ${vcs_info_msg_0_} '
 source ${HOME}/.zsh_plugins.sh
 
 #aliases
-alias tree="tree -aIC '.git'"
+alias tree="tree -aIC '.git' -L 3:"
 bindkey '^ ' autosuggest-accept
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/lib/x86_64-linux-gnu/
