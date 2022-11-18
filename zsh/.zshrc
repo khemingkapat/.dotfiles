@@ -13,7 +13,7 @@ zstyle ':vcs_info:*' check-for-changes true
  
 # Set up the prompt (with git branch name)
 setopt PROMPT_SUBST
-PS1=' %F{014}-> %1~%f ${vcs_info_msg_0_} '
+PS1=' %F{014}↳ %1~%f ${vcs_info_msg_0_} '
 
 source ${HOME}/.zsh_plugins.sh
 
