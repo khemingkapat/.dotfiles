@@ -19,6 +19,7 @@ source ${HOME}/.zsh_plugins.sh
 
 #aliases
 alias tree="tree -aIC '.git' -L 3:"
+alias home="cd ~"
 bindkey '^ ' autosuggest-accept
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/lib/x86_64-linux-gnu/
