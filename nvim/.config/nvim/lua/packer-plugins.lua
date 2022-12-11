@@ -21,6 +21,7 @@ return require('packer').startup(function(use)
     -- use 'neovim/nvim-lspconfig'
 
     -- colorscheme
-    use {'dracula/vim',as='dracula'}
+    -- use {'dracula/vim',as='dracula'}
+    use {'nyoom-engineering/oxocarbon.nvim'}
 end)
 

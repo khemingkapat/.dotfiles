@@ -74,11 +74,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  dracula = {
-    loaded = true,
-    path = "/home/khemi/.local/share/nvim/site/pack/packer/start/dracula",
-    url = "https://github.com/dracula/vim"
-  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/khemi/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -108,6 +103,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/khemi/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
+  ["oxocarbon.nvim"] = {
+    loaded = true,
+    path = "/home/khemi/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
+    url = "https://github.com/nyoom-engineering/oxocarbon.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
