@@ -21,11 +21,13 @@ return require('packer').startup(function(use)
 
     -- colorscheme
     -- use {'dracula/vim',as='dracula'}
-
     use 'nyoom-engineering/oxocarbon.nvim'
     --- lsp
     use 'williamboman/mason.nvim'
     use 'williamboman/mason-lspconfig.nvim'
     use 'neovim/nvim-lspconfig'
+
+    -- terminal
+    use "akinsho/toggleterm.nvim"
 end)
 
