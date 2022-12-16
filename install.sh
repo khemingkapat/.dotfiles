@@ -16,6 +16,7 @@ nix-env -iA \
         nixpkgs.python311 \
         nixpkgs.lua \
         nixpkgs.pdm \
+        nixpkgs.lazygit
 
 # stow
 stow nvim
