@@ -17,7 +17,11 @@ nix-env -iA \
         nixpkgs.lua \
         nixpkgs.pdm \
         nixpkgs.lazygit \
-        nixpkgs.tlp
+
+#install tlp via apt
+apt install tlp tlp-rdw
+systemctl enable tlp
+systemctl start tlp
 
 # stow
 stow nvim
