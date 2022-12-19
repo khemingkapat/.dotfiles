@@ -12,3 +12,4 @@ o.termguicolors=true
 o.ignorecase=true
 o.list = true
 o.cursorline=true
+o.hlsearch = false
