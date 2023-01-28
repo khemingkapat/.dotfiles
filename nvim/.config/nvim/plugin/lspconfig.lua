@@ -15,6 +15,11 @@ local on_attach = function(client,bufnr)
     buf_set_keymap('n', 'gr', '<cmd>Telescope lsp_references<CR>', opts)
 end
 
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
 require("lspconfig").pyright.setup({
-    on_attach = on_attach
+    on_attach = on_attach,
+    capabilities = capabilities
+
+
 })
