@@ -20,7 +20,7 @@ return require('packer').startup(function(use)
     use 'terrortylor/nvim-comment'
 
     -- colorscheme
-    -- use {'dracula/vim',as='dracula'}
+    use {'dracula/vim',as='dracula'}
     use 'nyoom-engineering/oxocarbon.nvim'
     --- lsp
     use 'williamboman/mason.nvim'
