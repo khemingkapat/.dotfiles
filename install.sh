@@ -17,6 +17,7 @@ nix-env -iA \
         nixpkgs.lua \
         nixpkgs.pdm \
         nixpkgs.lazygit \
+        nixpkgs.black \
 
 #install tlp via apt
 apt install tlp tlp-rdw
