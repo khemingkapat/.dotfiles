@@ -1,7 +1,6 @@
 vim.g.mapleader=' '
 
--- Plugins download and config
-require('packer-plugins')
-require('globals.options')
-require('globals.remaps')
-require('globals.autocmd')
+require('core.plugins')
+require('core.plugin_config')
+require('core.remaps')
+require('core.options')
