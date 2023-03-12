@@ -29,6 +29,7 @@ systemctl start tlp
 stow nvim
 stow zsh
 stow git
+stow alacritty
 
 # add zsh to valid login shells
 command -v zsh | sudo tee -a /etc/shells
@@ -39,6 +40,3 @@ sudo chsh -s $(which zsh) $USER
 #bundle zsh plugins
 antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
 
-# install packer.nvim
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
