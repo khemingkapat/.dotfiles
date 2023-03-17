@@ -26,6 +26,7 @@ stow nvim
 stow zsh
 stow git
 stow alacritty
+stow tmux
 
 # add zsh to valid login shells
 command -v zsh | sudo tee -a /etc/shells
