@@ -1,5 +1,6 @@
 local o = vim.opt
 o.relativenumber = true
+o.number=true
 o.splitbelow = true
 o.splitright=true
 o.syntax='ON'
