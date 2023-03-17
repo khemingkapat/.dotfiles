@@ -20,10 +20,6 @@ nix-env -iA \
         nixpkgs.black \
         nixpkgs.tmux \
 
-#install tlp via apt
-apt install tlp tlp-rdw
-systemctl enable tlp
-systemctl start tlp
 
 # stow
 stow nvim
