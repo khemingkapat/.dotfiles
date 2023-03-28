@@ -1,0 +1,19 @@
+add_newline = false
+
+format = '''
+[╭──](bold green)$env_var on $hostname at $directory
+[│](bold green)
+[╰──>](bold green) '''
+
+[character]
+success_symbol = '[↳](bold green)'
+
+[env_var.USER]
+format = '[$env_value](white)'
+variable = "USER"
+disabled = false
+
+[hostname]
+ssh_only = false
+format = "[$hostname](bold yellow)"
+disabled = false
