@@ -25,3 +25,22 @@ bindkey '^ ' autosuggest-accept
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/lib/x86_64-linux-gnu/
 
 eval "$(starship init zsh)"
+
+alias nvim-basic-ide="NVIM_APPNAME=nvim-basic-ide nvim"
+alias nvim-lazy="NVIM_APPNAME=LazyVim nvim"
+
+function nvims() {
+  items=("default" "nvim-basic-ide" "LazyVim")
+  config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
+  if [[ -z $config ]]; then
+    echo "Nothing selected"
+    return 0
+  elif [[ $config == "default" ]]; then
+    config=""
+  fi
+  NVIM_APPNAME=$config nvim $@
+}
+
+bindkey -s ^a "nvims\n"
+
+alias chance='python ~/workspace/chance/main.py'

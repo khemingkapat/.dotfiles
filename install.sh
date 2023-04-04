@@ -19,6 +19,8 @@ nix-env -iA \
         nixpkgs.lazygit \
         nixpkgs.black \
         nixpkgs.tmux \
+        nixpkgs.fzf \
+        nixpkgs.ripgrep \ 
 
 
 # stow
