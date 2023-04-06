@@ -40,11 +40,11 @@ local plugins = {
 	"akinsho/toggleterm.nvim",
 
   -- cmp plugins
-	"hrsh7th/nvim-cmp", -- The completion plugin
+  "hrsh7th/nvim-cmp", -- The completion plugin
   "hrsh7th/cmp-buffer", -- buffer completions
   "hrsh7th/cmp-nvim-lsp",
-  -- use "hrsh7th/cmp-path" -- path completions
-  -- use "hrsh7th/cmp-cmdline" -- cmdline completions
+  "hrsh7th/cmp-path" ,-- path completions
+  "hrsh7th/cmp-cmdline", -- cmdline completions
   "saadparwaiz1/cmp_luasnip", -- snippet completions
 
   -- snippets
