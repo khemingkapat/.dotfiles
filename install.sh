@@ -21,6 +21,7 @@ nix-env -iA \
         nixpkgs.tmux \
         nixpkgs.fzf \
         nixpkgs.ripgrep \ 
+        nixpkgs.bat \ 
 
 
 # stow
