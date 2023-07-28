@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-    ensure_installed = {"pyright"}
+    ensure_installed = {"pyright","rust_analyzer"}
 })
 
 local on_attach = function(client,bufnr)
@@ -23,3 +23,19 @@ require("lspconfig").pyright.setup({
 
 
 })
+
+require("lspconfig").rust_analyzer.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+    filetypes = {"rust"},
+    root_dir = require("lspconfig").util.root_pattern("Cargo.toml"),
+    settings = {
+        ['rust-analyzer'] = {
+            cargo = {
+                allFeatures = true,
+            }
+        }
+    }
+
+})
+
