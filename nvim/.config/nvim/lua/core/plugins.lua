@@ -30,6 +30,7 @@ local plugins = {
 
     -- colorscheme
     {'dracula/vim',as='dracula'},
+    { "catppuccin/nvim", name = "catppuccin" },
     --- lsp
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
