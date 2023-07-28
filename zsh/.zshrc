@@ -28,9 +28,10 @@ eval "$(starship init zsh)"
 
 alias nvim-basic-ide="NVIM_APPNAME=nvim-basic-ide nvim"
 alias nvim-lazy="NVIM_APPNAME=LazyVim nvim"
+alias nv-chad="NVIM_APPNAME=NvChad nvim"
 
 function nvims() {
-  items=("default" "nvim-basic-ide" "LazyVim")
+  items=("default" "nvim-basic-ide" "LazyVim" "NvChad")
   config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
   if [[ -z $config ]]; then
     echo "Nothing selected"
@@ -42,5 +43,3 @@ function nvims() {
 }
 
 bindkey -s ^a "nvims\n"
-
-alias chance='python ~/workspace/chance/main.py'
