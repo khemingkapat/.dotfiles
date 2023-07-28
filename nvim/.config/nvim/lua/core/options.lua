@@ -14,3 +14,7 @@ o.ignorecase=true
 o.list = true
 o.cursorline=true
 o.hlsearch = false
+o.cmdheight = 0
+o.statusline = "%f - %y %=%S %l / %L"
+o.showcmdloc="statusline"
+
