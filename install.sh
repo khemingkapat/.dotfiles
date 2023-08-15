@@ -20,8 +20,8 @@ nix-env -iA \
         nixpkgs.black \
         nixpkgs.tmux \
         nixpkgs.fzf \
-        nixpkgs.ripgrep \ 
-        nixpkgs.bat \ 
+	nixpkgs.ripgrep \
+	nixpkgs.bat
 
 
 # stow

@@ -17,4 +17,10 @@ o.hlsearch = false
 o.cmdheight = 0
 o.statusline = "%f - %y %=%S %l / %L"
 o.showcmdloc="statusline"
+vim.diagnostic.config({
+    virtual_text = false
+})
+o.updatetime = 150
+
+
 

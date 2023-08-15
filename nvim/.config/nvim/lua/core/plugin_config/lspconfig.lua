@@ -13,7 +13,22 @@ local on_attach = function(client,bufnr)
     buf_set_keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
     buf_set_keymap('n', '<space>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
     buf_set_keymap('n', 'gr', '<cmd>Telescope lsp_references<CR>', opts)
-end
+    buf_set_keymap('n', '<space>em', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
+    -- vim.api.nvim_create_autocmd("CursorHold", {
+    --     buffer = bufnr,
+    --     callback = function()
+    --         local opts = {
+    --             focusable = false,
+    --             close_events = { "BufLeave", "CursorMoved", "InsertEnter", "FocusLost" },
+    --             border = 'rounded',
+    --             source = 'always',
+    --             prefix = ' ',
+    --             scope = 'cursor',
+    --         }
+    --         vim.diagnostic.open_float(nil, opts)
+    --     end
+    --     })
+    end
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
@@ -41,3 +56,9 @@ require("lspconfig").rust_analyzer.setup({
 
 })
 
+
+require("lspconfig").clangd.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+    filetypes = {'c'},
+})
