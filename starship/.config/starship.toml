@@ -2,7 +2,7 @@ add_newline = false
 
 format = """
 [╭──](bold green)$env_var on $hostname at $directory
-[│](bold green)
+[│](bold green) $all
 [╰──>](bold green) """
 
 [character]
