@@ -20,8 +20,10 @@ nix-env -iA \
         nixpkgs.black \
         nixpkgs.tmux \
         nixpkgs.fzf \
+        nixpkgs.starship \
 	nixpkgs.ripgrep \
-	nixpkgs.bat
+	nixpkgs.bat \
+        nixpkgs.cargo \
 
 
 # stow
