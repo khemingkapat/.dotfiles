@@ -24,6 +24,8 @@ nix-env -iA \
 	nixpkgs.ripgrep \
 	nixpkgs.bat \
         nixpkgs.cargo \
+        nixpkgs.zip \
+        nixpkgs.unzip \
 
 
 # stow
@@ -32,6 +34,7 @@ stow zsh
 stow git
 stow alacritty
 stow tmux
+stow starship
 
 # add zsh to valid login shells
 command -v zsh | sudo tee -a /etc/shells
