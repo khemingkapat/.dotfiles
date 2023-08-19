@@ -1,7 +1,6 @@
 # use nix
 if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then . ~/.nix-profile/etc/profile.d/nix.sh; fi
 
-
 source ${HOME}/.zsh_plugins.sh
 
 #aliases
