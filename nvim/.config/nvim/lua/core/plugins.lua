@@ -13,34 +13,25 @@ vim.opt.rtp:prepend(lazypath)
 
 
 local plugins = {
-    {
-	'nvim-tree/nvim-tree.lua',
-    	dependencies = {'nvim-tree/nvim-web-devicons'}, -- optional, for file icons
-    	tag = 'nightly' -- optional, updated every week. (see issue #1193)
+    {'nvim-tree/nvim-tree.lua',
+    	dependencies = {'nvim-tree/nvim-web-devicons'},
+        tag = 'nightly' 
     },
     'nvim-lualine/lualine.nvim',
     'windwp/nvim-autopairs',
-    {
-    'nvim-telescope/telescope.nvim',
-    branch = '0.1.x',
-    dependencies = {
-      'nvim-lua/plenary.nvim',
-      {
-        'nvim-telescope/telescope-fzf-native.nvim',
-        build = 'make',
-        cond = function()
-          return vim.fn.executable 'make' == 1
-        end,
-      },
+    {'nvim-telescope/telescope.nvim',
+        branch = '0.1.x',
+        dependencies = {
+            'nvim-lua/plenary.nvim',
+            {'nvim-telescope/telescope-fzf-native.nvim',
+                build = 'make',
+                cond = function()
+                    return vim.fn.executable 'make' == 1
+                end,
+            },
+        },
     },
-  },
-  {
     'nvim-treesitter/nvim-treesitter',
-    dependencies = {
-      'nvim-treesitter/nvim-treesitter-textobjects',
-    },
-    build = ':TSUpdate',
-  },
     'terrortylor/nvim-comment',
 
     -- colorscheme
