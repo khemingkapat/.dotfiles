@@ -21,11 +21,26 @@ local plugins = {
     'nvim-lualine/lualine.nvim',
     'windwp/nvim-autopairs',
     {
-        'nvim-telescope/telescope.nvim', 
-        tag = '0.1.0',
-	dependencies = { {'nvim-lua/plenary.nvim'} }
+    'nvim-telescope/telescope.nvim',
+    branch = '0.1.x',
+    dependencies = {
+      'nvim-lua/plenary.nvim',
+      {
+        'nvim-telescope/telescope-fzf-native.nvim',
+        build = 'make',
+        cond = function()
+          return vim.fn.executable 'make' == 1
+        end,
+      },
     },
+  },
+  {
     'nvim-treesitter/nvim-treesitter',
+    dependencies = {
+      'nvim-treesitter/nvim-treesitter-textobjects',
+    },
+    build = ':TSUpdate',
+  },
     'terrortylor/nvim-comment',
 
     -- colorscheme
@@ -38,7 +53,7 @@ local plugins = {
     'jose-elias-alvarez/null-ls.nvim',-- formatter
 
     -- terminal
-	"akinsho/toggleterm.nvim",
+    "akinsho/toggleterm.nvim",
 
   -- cmp plugins
   "hrsh7th/nvim-cmp", -- The completion plugin
