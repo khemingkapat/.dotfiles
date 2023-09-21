@@ -10,3 +10,5 @@ require('core.plugin_config.nvim-web-devicons')
 require('core.plugin_config.telescope')
 require('core.plugin_config.toggleterm')
 require('core.plugin_config.colorscheme')
+require('core.plugin_config.oil')
+

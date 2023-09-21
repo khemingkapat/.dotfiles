@@ -17,6 +17,7 @@ local plugins = {
     	dependencies = {'nvim-tree/nvim-web-devicons'},
         tag = 'nightly' 
     },
+    'stevearc/oil.nvim',
     'nvim-lualine/lualine.nvim',
     'windwp/nvim-autopairs',
     {'nvim-telescope/telescope.nvim',
@@ -31,7 +32,12 @@ local plugins = {
             },
         },
     },
+    {
     'nvim-treesitter/nvim-treesitter',
+    dependencies = 
+        "nvim-treesitter/nvim-treesitter-textobjects"
+    },
+
     'terrortylor/nvim-comment',
 
     -- colorscheme
@@ -58,7 +64,7 @@ local plugins = {
   "L3MON4D3/LuaSnip", --snippet engine
   "rafamadriz/friendly-snippets", -- a bunch of snippets to use
 
-  "christoomey/vim-tmux-navigator"
+  "christoomey/vim-tmux-navigator",
 }
 
 local opts = {}
