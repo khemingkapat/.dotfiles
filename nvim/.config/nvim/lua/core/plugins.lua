@@ -13,12 +13,17 @@ vim.opt.rtp:prepend(lazypath)
 
 
 local plugins = {
-    {'nvim-tree/nvim-tree.lua',
-    	dependencies = {'nvim-tree/nvim-web-devicons'},
-        tag = 'nightly' 
+    -- {'nvim-tree/nvim-tree.lua',
+    -- 	dependencies = {'nvim-tree/nvim-web-devicons'},
+    --     tag = 'nightly' 
+    -- },
+    {'stevearc/oil.nvim',
+        dependencies = {
+            'nvim-tree/nvim-web-devicons',
+        }
     },
-    'stevearc/oil.nvim',
     'nvim-lualine/lualine.nvim',
+    'lukas-reineke/indent-blankline.nvim',
     'windwp/nvim-autopairs',
     {'nvim-telescope/telescope.nvim',
         branch = '0.1.x',
@@ -52,19 +57,19 @@ local plugins = {
     -- terminal
     "akinsho/toggleterm.nvim",
 
-  -- cmp plugins
-  "hrsh7th/nvim-cmp", -- The completion plugin
-  "hrsh7th/cmp-buffer", -- buffer completions
-  "hrsh7th/cmp-nvim-lsp",
-  "hrsh7th/cmp-path" ,-- path completions
-  "hrsh7th/cmp-cmdline", -- cmdline completions
-  "saadparwaiz1/cmp_luasnip", -- snippet completions
+    -- cmp plugins
+    "hrsh7th/nvim-cmp", -- The completion plugin
+    "hrsh7th/cmp-buffer", -- buffer completions
+    "hrsh7th/cmp-nvim-lsp",
+    "hrsh7th/cmp-path" ,-- path completions
+    "hrsh7th/cmp-cmdline", -- cmdline completions
+    "saadparwaiz1/cmp_luasnip", -- snippet completions
 
-  -- snippets
-  "L3MON4D3/LuaSnip", --snippet engine
-  "rafamadriz/friendly-snippets", -- a bunch of snippets to use
+    -- snippets
+    "L3MON4D3/LuaSnip", --snippet engine
+    "rafamadriz/friendly-snippets", -- a bunch of snippets to use
 
-  "christoomey/vim-tmux-navigator",
+    "christoomey/vim-tmux-navigator",
 }
 
 local opts = {}
