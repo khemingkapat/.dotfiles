@@ -1,4 +1,5 @@
 local o = vim.opt
+local g = vim.g
 o.relativenumber = true
 o.number=true
 o.splitbelow = true
@@ -21,6 +22,7 @@ vim.diagnostic.config({
     virtual_text = false
 })
 o.updatetime = 150
+o.undofile=true
 
 
 
