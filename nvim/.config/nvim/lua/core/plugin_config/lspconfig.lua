@@ -41,9 +41,26 @@ require("lspconfig").rust_analyzer.setup({
 
 })
 
-
 require("lspconfig").clangd.setup({
     on_attach = on_attach,
     capabilities = capabilities,
-    filetypes = {'c'},
+    filetypes = {'c','cpp'},
+})
+
+require("lspconfig").svelte.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+    filetypes = {'svelte'},
+})
+
+require("lspconfig").cssls.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+    filetypes = {'css'},
+})
+
+require("lspconfig").html.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+    filetypes = {'html'},
 })
