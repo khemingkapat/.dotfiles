@@ -27,3 +27,6 @@ function nvims() {
 }
 
 bindkey -s ^a "nvims\n"
+
+eval "$(fzf --zsh)"
+eval "$(zoxide init zsh)"
