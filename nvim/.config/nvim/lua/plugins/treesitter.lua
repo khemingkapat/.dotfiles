@@ -1,7 +1,15 @@
-require('nvim-treesitter.configs').setup({
-    ensure_installed = {"python","lua","c","rust","cpp"},
-    highlight = {enable=true},
-    indent = {enable=true},
+return {
+    "nvim-treesitter/nvim-treesitter",
+    dependencies ={
+        "nvim-treesitter/nvim-treesitter-textobjects"
+    },
+    build = ":TSUpdate",
+    config = function()
+      local config = require("nvim-treesitter.configs")
+      config.setup({
+        auto_install = true,
+        highlight = { enable = true },
+        indent = { enable = true },
     textobjects = {
         select = {
             enable = true,
@@ -20,4 +28,6 @@ require('nvim-treesitter.configs').setup({
             }
         }
     }
-})
+      })
+    end
+  }

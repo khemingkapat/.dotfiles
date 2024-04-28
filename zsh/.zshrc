@@ -13,9 +13,10 @@ bindkey '^ ' autosuggest-accept
 eval "$(starship init zsh)"
 
 alias kickstart="NVIM_APPNAME=kickstart nvim"
+alias newbs="NVIM_APPNAME=newbs nvim"
 
 function nvims() {
-  items=("default" "kickstart")
+  items=("default" "kickstart" "newbs")
   config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
   if [[ -z $config ]]; then
     echo "Nothing selected"
