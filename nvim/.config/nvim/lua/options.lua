@@ -5,8 +5,9 @@ o.splitbelow = true
 o.splitright = true
 
 o.syntax = "ON"
-o.shiftwidth = 4
 o.expandtab = true
+o.tabstop = 4
+o.shiftwidth = 4
 o.softtabstop=4
 
 o.autoindent = true
