@@ -12,7 +12,7 @@ o.softtabstop=4
 
 o.autoindent = true
 o.smartindent = true
-
+o.wrap = false
 o.mouse = "a"
 o.termguicolors = true
 o.ignorecase = true

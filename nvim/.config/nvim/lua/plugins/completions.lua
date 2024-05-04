@@ -1,5 +1,6 @@
 return {
 	"hrsh7th/nvim-cmp",
+	event = { "InsertEnter" },
 	dependencies = {
 		"hrsh7th/cmp-buffer",
 		"hrsh7th/cmp-path",
@@ -18,10 +19,10 @@ return {
 					require("luasnip").lsp_expand(args.body)
 				end,
 			},
-			-- window = {
-			-- completion = cmp.config.window.bordered(),
-			-- documentation = cmp.config.window.bordered(),
-			-- },
+			window = {
+				completion = cmp.config.window.bordered(),
+				documentation = cmp.config.window.bordered(),
+			},
 			mapping = cmp.mapping.preset.insert({
 				["<C-k>"] = cmp.mapping.select_prev_item(),
 				["<C-j>"] = cmp.mapping.select_next_item(),
