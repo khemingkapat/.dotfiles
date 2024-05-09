@@ -5,9 +5,16 @@ return {
         require("toggleterm").setup({
             direction = "float",
         })
-        vim.keymap.set("n", "<leader>t", "<cmd>ToggleTerm<CR>")
-
         local Terminal = require("toggleterm.terminal").Terminal
+        local default = Terminal:new({ cmd = "clear ; zsh"})
+        
+        function _default_toggle()
+            default:toggle()
+        end
+
+        -- vim.keymap.set("n", "<leader>t", "<cmd>ToggleTerm<CR>")
+        vim.api.nvim_set_keymap("n", "<leader>t", "<cmd>lua _default_toggle()<CR>>", { noremap = true, silent = true })
+
         local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
 
         function _lazygit_toggle()
