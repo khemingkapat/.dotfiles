@@ -6,8 +6,8 @@ return {
             direction = "float",
         })
         local Terminal = require("toggleterm.terminal").Terminal
-        local default = Terminal:new({ cmd = "clear ; zsh"})
-        
+        local default = Terminal:new({ cmd = "clear ; zsh" })
+
         function _default_toggle()
             default:toggle()
         end
