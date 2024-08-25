@@ -1,4 +1,4 @@
-local = opts = {noremap=true}
+local opts = {noremap=true}
 
 vim.keymap.set('t','<Esc>','<C-\\><C-n>',opts)
 vim.keymap.set('l','yy','+y',opts)
@@ -12,3 +12,5 @@ function _toggle_wrap()
 end
 
 vim.keymap.set('n','<leader>lr',"<cmd>lua _toggle_wrap()<CR>",opts)
+
+
