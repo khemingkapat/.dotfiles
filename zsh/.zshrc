@@ -12,22 +12,24 @@ bindkey '^ ' autosuggest-accept
 
 eval "$(starship init zsh)"
 
-alias kickstart="NVIM_APPNAME=kickstart nvim"
-alias newbs="NVIM_APPNAME=newbs nvim"
+# alias kickstart="NVIM_APPNAME=kickstart nvim"
+# alias newbs="NVIM_APPNAME=newbs nvim"
+#
+# function nvims() {
+#   items=("default" "kickstart" "newbs")
+#   config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
+#   if [[ -z $config ]]; then
+#     echo "Nothing selected"
+#     return 0
+#   elif [[ $config == "default" ]]; then
+#     config=""
+#   fi
+#   NVIM_APPNAME=$config nvim $@
+# }
+#
+# bindkey -s ^a "nvims\n"
 
-function nvims() {
-  items=("default" "kickstart" "newbs")
-  config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
-  if [[ -z $config ]]; then
-    echo "Nothing selected"
-    return 0
-  elif [[ $config == "default" ]]; then
-    config=""
-  fi
-  NVIM_APPNAME=$config nvim $@
-}
-
-bindkey -s ^a "nvims\n"
+alias nvx="NVIM_APPNAME=nvimexample nvim"
 
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
