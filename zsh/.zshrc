@@ -10,6 +10,8 @@ bindkey '^ ' autosuggest-accept
 
 #export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/lib/x86_64-linux-gnu/
 
+export PATH=$PATH:/snap/bin:/home/khemi/.local/bin
+
 eval "$(starship init zsh)"
 
 # alias kickstart="NVIM_APPNAME=kickstart nvim"
@@ -31,7 +33,6 @@ eval "$(starship init zsh)"
 
 alias nvx="NVIM_APPNAME=nvimexample nvim"
 
+
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
-
-alias nd="nix develop --command zsh"
