@@ -34,5 +34,5 @@ eval "$(starship init zsh)"
 alias nvx="NVIM_APPNAME=nvimexample nvim"
 
 
-eval "$(fzf --zsh)"
+# source <(fzf --zsh)
 eval "$(zoxide init zsh)"
